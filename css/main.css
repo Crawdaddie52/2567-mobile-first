@@ -1,20 +1,40 @@
 @charset "UTF-8";
 /* CSS Document */
-*, *:after, *:before {
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	-o-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Typography
+	1.1 - Headings
+	1.2 - Body Copy
+	1.3 - Buttons
+	1.4 - Forms
+	1.5 - Lists
+	1.6 - Tables
+2.0 - Navigation Menus
+	3.1 - Main Menu
+	3.2 - Sub Menu
+	3.3 - Footer Menu
+3.0 - Content
+	3.1 - Site Structure (Site Header, Advertisement, Site Footer)
+	3.2 - Section Name
+	3.3 - Section Name
+4.0 - Media
+5.0 - Utility
+	5.1 - Background Colors
+	5.2 - Text Colors
+	5.3 - Text Sizes
+	5.4 - Alignments
+--------------------------------------------------------------*/
+/*--- 1.0 TYPOGRAPHY ---*/
+html {
+	font-size: 16px;
 	}
-body {
-	background-color: #BCE2D6;
-	}
+/*--- 1.1 HEADINGS ---*/
 h1 {
 	color: #E77124;
 	font-family: 'Oswald', sans-serif;
-	font-size: 60px;
-	margin-top: 110px;
+	font-size: 4.5rem;
+	margin-top: 50px;
 	text-align: center;
 	text-transform: uppercase;
 	}
@@ -28,26 +48,77 @@ h3 {
 	font-family: 'Oswald', sans-serif;
 	color: #E77124;
 	}
-a {
-	text-decoration: none;
-	}
-a:hover {
-	color: inherit;
-	}
-p {
-	color: #184425;
+/*--- 1.2 BODY COPY ---*/
+header p {
+	margin: 0 auto;
+	width: 402px;
+	text-align: center;
 	}
 #works {
 	text-align: left;
 	}
-#designs {
-	margin-left: 100px;
+#our-team-p {
+	margin: 0 auto;
+	margin-bottom: 30px;
+	text-align: center;
+	width: 616px;
+	}
+/*--- 1.3 BUTTONS ---*/
+
+a {
+	text-decoration: none;
+	color: inherit;
+	}
+a:hover {
+	color: inherit;
+	}
+/*--- 1.5 LISTS ---*/
+header ul li {
+	display: inline-block;
 	}
 li {
 	display: inline;
 	}
+.nav li, #address {
+	color: #fff;
+	font-family: 'Oswald', sans-serif;
+	margin-left: 75px;
+	text-transform: uppercase;
+	}
+.nav li:hover {
+	color: #649385;
+	border-bottom: 5px solid;
+	}	
+.social-media li{
+	margin-left: 50px;
+	}
+.social-media li:first-child {
+	margin: 0;
+	}	
+#jane ul {
+	margin-left: 200px;
+	}	
+/*--- 2.0 NAVIAGATION MENUS ---*/	
+
+*, *:after, *:before {
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	}
+body {
+	background-color: #BCE2D6;
+	}
+p {
+	color: #184425;
+	}
+#designs {
+	margin-left: 100px;
+	}
 #jane {
 	float: right;
+	margin-right: 150px;
 	}
 #person-1{
 	background-image: url(../img/person-1.jpg);
@@ -108,8 +179,34 @@ li {
 #person-1:hover #person-1-hover, #person-2:hover #person-2-hover, #person-3:hover #person-3-hover, #person-4:hover #person-4-hover {
 	opacity: 1;
 	}
+.social-media {
+	display: flex;
+	}
 
-
+.facebook {
+	background-image: url(../img/facebook.png);
+	width: 25px;
+	height: 25px;
+	}
+.facebook:hover {
+	background: url(../img/facebook.png) 0 -25px;
+	}
+.twitter {
+	background-image: url(../img/twitter.png);
+	width: 25px;
+	height: 25px;
+	}
+.twitter:hover {
+	background: url(../img/twitter.png) 0 -25px;
+	}
+.linked-in {
+	background-image: url(../img/linked-in.png);
+	width: 25px;
+	height: 25px;
+	}
+.linked-in:hover {
+	background: url(../img/linked-in.png) 0 -25px;
+	}
 .bg-purple {
 	background-color: #9C2489;
 	}
@@ -123,45 +220,26 @@ li {
 	margin-right: 40px;
 	margin-top: 35px;
 	}
-.nav li, #address {
-	color: #fff;
-	font-family: 'Oswald', sans-serif;
-	margin-left: 75px;
-	text-transform: uppercase;
-	}
-.nav li:hover {
-	color: #649385;
-	border-bottom: 5px solid;
-	}
-header p {
-	margin: 0 auto;
-	width: 402px;
-	text-align: center;
-	}
+
 #buttons {
 	margin-left: 250px;
+	margin-top: 50px;
+	padding-bottom: 100px;
 	}
-button {
+#buttons a {
 	background-color: #E77124;
 	color: #BCE2D6;
 	font-family: 'Oswald', sans-serif;
-	margin-bottom: 150px;
 	margin-left: 25px;
-	margin-top: 30px;
 	padding: 10px 45px;
 	border-radius: 30px;
+	text-align: center;
 	text-transform: uppercase;
 	}
-button:hover {
+#buttons a:hover {
 	background-color: #9C2489;
 	color: #E77124;
-	}
-#our-team {
-	margin: 0 auto;
-	margin-bottom: 40px;
-	width: 616px;
-	text-align: center;
-	}
+	} 
 #hero-img {
 	background-image: url(../img/hero.png); /* Figure this one out no repeat */
 	background-repeat: no-repeat;
@@ -297,6 +375,15 @@ img {
 .wrapper {
 		width: 85%;
 		}
+h1 {
+	font-size: 3.5rem;
+	}
+h2 {
+	font-size: 2rem;
+	}
+h3 {
+	font-size: 1.5rem;
+	}
 .col-1-4:nth-child(even), .col-1-3:nth-child(3), .col-1-1, .col-1-7, .col-1-11, .col-1-6:nth-child(even), .col-1-8:nth-child(4), .col-1-9:nth-child(9), .col-1-9:nth-child(3), .col-1-9:nth-child(6), .col-1-10:nth-child(5), .col-1-12:nth-child(4), .col-1-12:nth-child(8) {
 		padding: 0;
 		}
@@ -309,10 +396,67 @@ img {
 	.col-1-3, .col-1-9 {
 		width: 33.33%;
 		}
-	.col-1-4, .col-1-6, .col-5-6, .col-3-4 {
+	.col-1-4, .col-1-3 {
+		width: 100%;
+		text-align: center;
+		padding: 0;
+		}
+	.col-1-3 {
+		margin-left: 25px;
+		}
+	header ul li {
+		width: 33%;
+		display: inline-block;
+		margin-left: 0;
+	}
+	header p {
+		width: inherit;
+		}
+	#team-img p {
+		text-align: center;
+		width: inherit;
+		}
+	header ul li:first-child{
+		margin: 0 auto;
+		}
+	header ul li:last-child{
+		margin-left: 0;
+		}
+	#buttons {
+		display: flex;
+		margin: 0 auto;
+		width: 100%;
+		}
+	.logo {
+		margin-left: 10px;
+		padding-top: 25px;
+		}
+	.col-1-3 p {
+		text-align: center;
+		margin-bottom: 25px;
+		}
+	.col-1-3:nth-child(3) {
+		margin-bottom: 250px;
+		}
+	#designs {
+		margin: 0 auto;
+		}
+	.col-1-4 p {
+		margin-bottom: 25px;
+		}
+	.col-1-4:nth-child(4) p{
+		margin-bottom: 75px;
+		}
+	#hero-img, #team-img, #works-img {
+		background-image: none;
+		}
+	.col-1-6, .col-5-6, .col-3-4 {
 		width: 50%;
 		}
 	.col-1-7, .col-1-11 {
+		width: 100%;
+		}
+	.col-4-7 {
 		width: 100%;
 		}
 	}

@@ -23,9 +23,9 @@
             <div class="nav">
                 <nav>
                     <ul>
-                        <li>home</li>
-                        <li>about</li>
-                        <li>works</li>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#our-team">about</a></li>
+                        <li><a href="#works">works</a></li>
                     </ul>
                 </nav>
             </div>
@@ -37,8 +37,8 @@
             <h2>we design things</h2>
             <p><b>Lorem ipsum dolor sit amet, indoctum dissentiet eam ne. Eum omnium docendi cu. Aliquid delenit an pri, ad mea nostrud nominavi menandri.</b></p>
             <div id="buttons">
-                <button><a href="#"><!-- This needs a place to go -->hire us</a></button>
-                <button><a href="#"> <!-- This needs a place to go -->view work</a></button>
+                <a href="#our-team">hire us</a>
+                <a href="#works">view work</a>
             </div>
         </div>
     </div>
@@ -72,17 +72,17 @@
     </div>
     <div id="team-img"> <!-- background team section img -->
     	<div class="wrapper">
-        	<h2>our team</h2>
-            <p id="our-team"><b>Ea expetenda prodesset cum, tibique principes laboramus id pro. Ei dolorem facilis volutpat sed, eu pro dicta iracundia scripserit. Vel singulis posidonium ea, primis possim voluptatum ei has. Ut usu sale modus liberavisse. Eos reque mnesarchum ea, ea tamquam disputando has.</b></p>
+        	<h2 id="our-team">our team</h2>
+            <p id="our-team-p"><b>Ea expetenda prodesset cum, tibique principes laboramus id pro. Ei dolorem facilis volutpat sed, eu pro dicta iracundia scripserit. Vel singulis posidonium ea, primis possim voluptatum ei has. Ut usu sale modus liberavisse. Eos reque mnesarchum ea, ea tamquam disputando has.</b></p>
             <div class="row">
-            	<div id="jane">
-                    <div id="person-1">
-                    	<div id="person-1-hover"></div>
+            	<div class="col-4-7" id="jane">
+                    <div class="col-4-7" id="person-1">
+                    	<div class="col-4-7" id="person-1-hover"></div>
                     </div>
-                    <ul>
-                        <li>twitter</li><!-- Sprites go here mang -->
-                        <li>facebook</li>
-                        <li>linkedin</li>
+                    <ul class="social-media">
+                        <li><a href="https://www.facebook.com" target="_blank"><div class="facebook"></div></a></li>
+                        <li><a href="https://www.linkedin.com" target="_blank"><div class="linked-in"></div></a></li>
+                        <li><a href="https://www.twitter.com" target="_blank"><div class="twitter"></div></a></li>
                     </ul>
                     <p>Vix ad posse impetus, vis id quem nobis suscipiantur. His an assum omnium periculis.</p>
                 </div>
@@ -92,10 +92,10 @@
                 	<div id="person-2">
                     	<div id="person-2-hover"></div>
                      </div>
-                	<ul>                	
-                        <li>twitter</li><!-- Sprites go here mang -->
-                        <li>facebook</li>
-                        <li>linkedin</li>
+                    <ul class="social-media">
+                        <li><a href="https://www.facebook.com" target="_blank"><div class="facebook"></div></a></li>
+                        <li><a href="https://www.linkedin.com" target="_blank"><div class="linked-in"></div></a></li>
+                        <li><a href="https://www.twitter.com" target="_blank"><div class="twitter"></div></a></li>
                     </ul>
                     <p>Nam purto solet eu, vero m.</p>
                 </div>
@@ -103,10 +103,10 @@
                 	<div id="person-3">
                     	<div id="person-3-hover"></div>
                     </div>
-                	<ul>                	
-                        <li>twitter</li><!-- Sprites go here mang -->
-                        <li>facebook</li>
-                        <li>linkedin</li>
+                    <ul class="social-media">
+                        <li><a href="https://www.facebook.com" target="_blank"><div class="facebook"></div></a></li>
+                        <li><a href="https://www.linkedin.com" target="_blank"><div class="linked-in"></div></a></li>
+                        <li><a href="https://www.twitter.com" target="_blank"><div class="twitter"></div></a></li>
                     </ul>
                     <p>Exerci antiopam constituam per ex, pro odio enim te, ut eam quidam docendi ancillae. Id nisl appareat mel.</p>
                 </div>            	
@@ -114,10 +114,10 @@
                 	<div id="person-4">
                     	<div id="person-4-hover"></div>
                     </div>
-                	<ul>                	
-                        <li>twitter</li><!-- Sprites go here mang -->
-                        <li>facebook</li>
-                        <li>linkedin</li>
+                    <ul class="social-media">
+                        <li><a href="https://www.facebook.com" target="_blank"><div class="facebook"></div></a></li>
+                        <li><a href="https://www.linkedin.com" target="_blank"><div class="linked-in"></div></a></li>
+                        <li><a href="https://www.twitter.com" target="_blank"><div class="twitter"></div></a></li>
                     </ul>
                     <p>Lorem ipsum dolor sit amet, indoctum dissentiet eam ne. Eum omnium docendi cu. </p>
                 </div>
@@ -127,18 +127,17 @@
     <div></div> <!-- below team section entered here -->
     <footer class="bg-purple">
     	<div class="wrapper row">
-        	<div class="logo">
+        	<div class="logo col-1-6">
         		<img src="img/logo.png" alt="logo">
             </div>
-            <div id="address">6041 Old York Road <br>Dekalb, IL 60115</div>
-            <div class="nav">
+            <div id="address" class="col-1-6">6041 Old York Road <br>Dekalb, IL 60115</div>
+            <div class="nav col-1-6">
                 <ul>
-                    <li>home</li>
-                    <li>about</li>
-                    <li>works</li>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#our-team">about</a></li>
+                    <li><a href="#works">works</a></li>
                 </ul>
-            </div>
-            
+            </div>     
         </div>
     </footer>
 </body>
